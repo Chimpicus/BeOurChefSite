@@ -1,0 +1,97 @@
+.navbar {
+  background-color: #4a4d57;
+  color: white;
+  padding: 0 !important;
+}
+
+.navbar-socmed {
+  margin: auto 16px;
+  text-decoration: none;
+}
+
+.navbar-socmed-link {
+  color: #23fcfd;
+  font-size: 28px;
+  margin: auto 8px;
+  vertical-align: middle;
+}
+
+.navbar-socmed-link:hover {
+  color: #23fdfddc;
+}
+
+.navbar-logo {
+  background-color: #4A4D57;
+  border: 3px solid #23fcfd;
+  border-radius: 50%;
+  height: 140px;
+  left: 50%;
+  margin: auto;
+  padding: 1px 2px 2px 1px;
+  position: absolute;
+  top: 5px;
+  transform: translate(-50%);
+  width: 140px;
+  z-index: 1;
+}
+
+.navbar-nav {
+  margin-right: 20px;
+  padding: 20px 4px;
+  text-align: center;
+}
+
+.navbar-nav-toggler {
+  background-color: #4A4D57;
+  border: 1px solid transparent;
+  color: #23fcfd;
+  margin: 8px;
+}
+
+.navbar-nav-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2835, 252, 253, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-nav-toggler:focus {
+  border: 1px solid #23fcfd;
+}
+
+.navbar-nav-link {
+  border: 2px solid transparent;
+  margin: 0 auto;
+  transition: 1.3s;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-nav-link:hover {
+  border-bottom: 2px solid #23fcfd;
+  transition: 0.7s;
+}
+
+.navbar-nav-link:active {
+  color: #23fcfd;
+}
+
+@media (max-width: 992px) {
+  .navbar-socmed {
+    margin: auto 4px;
+  }
+  .navbar-socmed-link {
+    font-size: 24px;
+  }
+  .navbar-logo {
+    height: 110px !important;
+    width: 110px !important;
+  }
+  .navbar-nav {
+    margin: auto;
+    padding-top: 80px;
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+/*# sourceMappingURL=App.css.map */

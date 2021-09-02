@@ -1,0 +1,109 @@
+// file not used. use as referance to build Navbar.scss
+
+.header {
+
+    &-image {
+        background-color: #4A4D57;
+        border: 3px solid #23fcfd;
+        border-radius: 50%;
+        left: 50%;
+        top: 5px;
+        margin: auto;
+        padding: 1px 2px 2px 1px;
+        position: absolute;
+        transform: translate(-50%);
+        // 
+        z-index: 1;
+    }
+
+
+
+    &-navbar {
+        color: white !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+
+
+
+        &-brand {
+            color: white !important;
+
+        }
+
+        &-brand:hover {
+            color: #23fcfd !important;
+            transition: 0.7s;
+        }
+
+        &-toggle {
+            color: #23fcfd;
+            border: 1px solid white;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+        }
+
+        &-toggle:focus {
+            border: 1px solid #23fcfd !important;
+            box-shadow: none;
+            text-decoration: none;
+        }
+
+        &-nav {
+            margin: auto 10px;
+            // padding-top: 100px; - add to reduced screen size styling
+
+            &-link {
+                border-bottom: 2px solid transparent;
+                color: white !important;
+                display: block;
+                font-size: 12px;
+                font-weight: 400;
+                margin: 0 auto;
+                padding: 4px 8px !important;
+                text-align: center;
+                transition: 1s;
+            }
+
+            &-link:hover {
+                border-bottom: 2px solid #23fcfd;
+                color: #23fcfd !important;
+                margin: 0 auto;
+                transition: 0.7s;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+
+
+        &-navbar {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+
+            &-nav {
+                padding-top: 100px;
+
+                &-link {
+                    border-bottom: 2px solid transparent;
+                    color: white !important;
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin: 0 auto;
+                    padding: 4px 8px !important;
+                    text-align: center;
+                    transition: 1s;
+                }
+
+                &-link:hover {
+                    border-bottom: 2px solid #23fcfd;
+                    color: #23fcfd !important;
+                    margin: 0 auto;
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+}
