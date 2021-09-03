@@ -1,7 +1,9 @@
 .navbar {
-    background-color: #4a4d57;
+    background-color: #202125ad;
     color: white;
     padding: 0 !important;
+    position: sticky !important;
+    z-index: 1;
 
     &-socmed {
         margin: auto 16px;
@@ -9,13 +11,16 @@
 
         &-link {
             color: #23fcfd;
+            cursor: pointer;
             font-size: 28px;
             margin: auto 8px;
             vertical-align: middle;
+            transition: 0.3s;
         }
 
         &-link:hover {
             color: #23fdfddc;
+            transition: 0.3s;
         }
     }
 
@@ -23,6 +28,7 @@
         background-color: #4A4D57;
         border: 3px solid #23fcfd;
         border-radius: 50%;
+        cursor: pointer;
         height: 140px;
         left: 50%;
         margin: auto;
@@ -31,15 +37,13 @@
         top: 5px;
         transform: translate(-50%);
         width: 140px;
-        z-index: 1;
+        z-index: 5;
     }
 
     &-nav {
         margin-right: 20px;
         padding: 20px 4px;
         text-align: center;
-
-
 
         &-toggler {
             background-color: #4A4D57;
@@ -51,7 +55,6 @@
                 //edit stroke below to change color of toggle button
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2835, 252, 253, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
             }
-
         }
 
         &-toggler:focus {
@@ -62,14 +65,13 @@
             border: 2px solid transparent;
             margin: 0 auto;
             transition: 1.3s;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
-
         }
 
         &-link:hover {
             border-bottom: 2px solid #23fcfd;
-            transition: 0.7s;
+            transition: 1s;
         }
 
         &-link:active {
@@ -81,6 +83,38 @@
 
 @media (max-width: 992px) {
     .navbar {
+
+
+
+        &-socmed {
+            margin: auto 4px;
+
+            &-link {
+                font-size: 24px;
+            }
+        }
+
+        &-logo {
+            height: 110px !important;
+            width: 110px !important;
+        }
+
+        &-nav {
+
+            padding-top: 80px;
+
+            &-toggler {
+                background-color: transparent;
+                border: 2px solid transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #000000;
+
         &-socmed {
             margin: auto 4px;
 
@@ -98,7 +132,9 @@
             margin: auto;
             padding-top: 80px;
 
-
+            &-toggler {
+                background-color: #000;
+            }
         }
     }
 }

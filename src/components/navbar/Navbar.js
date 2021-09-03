@@ -2,10 +2,12 @@ const Navbar = () => {
     return ( 
       
             
-            <nav className="navbar-expand-lg navbar-light bg-light">
+            <nav className=" navber navbar-expand-lg navbar-light bg-light">
             <img className="navbar-logo" 
-            src="https://beourchef.co.uk/wp-content/uploads/2020/07/logo.png"
-            alt="BeOurChef logo"> 
+            src="/images/logo.png"
+            // src="https://beourchef.co.uk/wp-content/uploads/2020/07/logo.png" - use this as a temp backup
+            alt="BeOurChef logo"
+            > 
             </img>
   <div className="navbar navbar container-fluid">
     <div className="navbar-socmed">
@@ -36,6 +38,8 @@ const Navbar = () => {
     </div>
   </div>
 </nav>
+
+
 
 
       
